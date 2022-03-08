@@ -1,0 +1,18 @@
+.MainContainer {
+    color: var(--text);
+    font-size: 1.5em;
+    padding-left: var(--main-margin);
+    padding-right: var(--main-margin);
+    margin: 10px;
+    display: grid;
+}
+
+/*
+-----------------
+Currency Button Styles
+-----------------
+*/
+button .currencies{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,16 @@
+.Header {
+    color: var(--text);
+    padding: 5px;
+    background-color: var(--header-background);
+    border-bottom: 1px solid var(--text);
+    height: var(--header-height);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+h1.Header-title {
+    font-size: 2em;
+}
+

@@ -1,0 +1,56 @@
+
+h1.BarChart--title {
+    font-size: 1em;
+}
+
+h1.Header-title {
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin: auto;
+    font-weight: 400;
+}
+p.BarChart--text  {
+    font-size:1.0em;
+}
+
+
+/*
+-----------------
+Bar Styles
+-----------------
+*/
+
+.BarChart {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 5px;
+    align-items: end;
+    max-height: 500px;
+}
+
+.BarChart-bar {
+    color: var(--text);
+    font-size: 2em;
+    transition: transform 0.3s;
+    text-align: center;
+    border: 1px solid var(--text);
+}
+
+.BarChart-bar:nth-child(even) {
+    background-color: var(--bar);
+}
+
+.BarChart-bar:nth-child(odd) {
+    background-color: var(--odd-bar);
+}
+
+.BarChart-bar:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1.1);
+    z-index: 1; 
+}
+
